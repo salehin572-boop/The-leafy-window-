@@ -1,0 +1,6 @@
+{
+  "name": "The Leafy Window",
+  "description": "Practical, beautiful guidance for growing a thriving indoor jungle. Houseplant guides, plant problem diagnostics, window light calculators, and gear reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

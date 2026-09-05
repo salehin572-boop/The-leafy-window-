@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <!-- Soft Sunlight Gradients -->
+    <radialGradient id="windowGlow" cx="62%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fff9ea" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#eaf3e5" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#d6e8d1" stop-opacity="0.5" />
+    </radialGradient>
+
+    <!-- Warm Clay Pot Gradient -->
+    <linearGradient id="terracottaPot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97d54" />
+      <stop offset="60%" stop-color="#c56d44" />
+      <stop offset="100%" stop-color="#9a4722" />
+    </linearGradient>
+
+    <!-- Sage Pot Gradient -->
+    <linearGradient id="sagePot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a4bea0" />
+      <stop offset="60%" stop-color="#7a9776" />
+      <stop offset="100%" stop-color="#557252" />
+    </linearGradient>
+
+    <!-- Small Pot Gradient -->
+    <linearGradient id="specklePot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ece6d8" />
+      <stop offset="100%" stop-color="#d3cbb9" />
+    </linearGradient>
+
+    <!-- Leaf Green Gradient -->
+    <linearGradient id="leafGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4e7c48" />
+      <stop offset="100%" stop-color="#244d2e" />
+    </linearGradient>
+
+    <linearGradient id="leafGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#76a96e" />
+      <stop offset="100%" stop-color="#3c6f39" />
+    </linearGradient>
+
+    <!-- Circle Clip for internal elements -->
+    <clipPath id="circleClip">
+      <circle cx="250" cy="250" r="236" />
+    </clipPath>
+
+    <!-- Arc Path for the Curved Motto -->
+    <path id="textArcBottom" d="M 130 405 A 195 195 0 0 0 370 405" fill="none" />
+  </defs>
+
+  <!-- Base Circular Background -->
+  <circle cx="250" cy="250" r="244" fill="#FAF8F4" stroke="#1A3C34" stroke-width="7" />
+  <circle cx="250" cy="250" r="236" fill="none" stroke="#1A3C34" stroke-width="2.5" stroke-opacity="0.85" />
+
+  <!-- Clipped Content: Window, Plants & Leaves -->
+  <g clip-path="url(#circleClip)">
+    
+    <!-- Window Frame & Outdoor View (Upper Center-Right) -->
+    <g id="window-backdrop">
+      <!-- Window Pane Area -->
+      <rect x="180" y="55" width="220" height="235" rx="6" fill="url(#windowGlow)" stroke="#c2b69e" stroke-width="4" opacity="0.9" />
+      
+      <!-- Window Sill Line -->
+      <rect x="160" y="286" width="260" height="14" rx="3" fill="#e7decb" stroke="#b3a58b" stroke-width="2" />
+      <line x1="160" y1="300" x2="420" y2="300" stroke="#8d816a" stroke-width="2.5" />
+
+      <!-- Window Mullions (Panes Cross) -->
+      <!-- Vertical Mullion -->
+      <rect x="286" y="55" width="8" height="231" fill="#ded5c0" stroke="#b3a58b" stroke-width="1.5" />
+      <!-- Horizontal Mullion -->
+      <rect x="180" y="160" width="220" height="8" fill="#ded5c0" stroke="#b3a58b" stroke-width="1.5" />
+
+      <!-- Soft Green Trees/Bushes outside window -->
+      <ellipse cx="235" cy="115" rx="42" ry="32" fill="#cbe2c4" opacity="0.45" />
+      <ellipse cx="355" cy="120" rx="55" ry="40" fill="#b9dab2" opacity="0.4" />
+      <ellipse cx="280" cy="95" rx="38" ry="26" fill="#d7ead2" opacity="0.5" />
+    </g>
+
+    <!-- Potted Plants on the Window Sill -->
+    <g id="sill-plants">
+      
+      <!-- 1. Center Left: ZZ Plant in Sage Green Pot -->
+      <g id="zz-plant">
+        <!-- Pot -->
+        <path d="M 270 260 L 273 288 Q 287 292 301 288 L 304 260 Z" fill="url(#sagePot)" stroke="#1A3C34" stroke-width="2" />
+        <ellipse cx="287" cy="260" rx="17" ry="4.5" fill="#557252" stroke="#1A3C34" stroke-width="1.8" />
+        <!-- Soil -->
+        <ellipse cx="287" cy="260" rx="15" ry="3.5" fill="#3a2717" />
+        
+        <!-- Upright ZZ Stems & Glossy Leaves -->
+        <path d="M 287 258 Q 288 200 293 162" fill="none" stroke="#2b4e28" stroke-width="3" stroke-linecap="round" />
+        <path d="M 282 258 Q 278 215 275 190" fill="none" stroke="#2b4e28" stroke-width="2.5" stroke-linecap="round" />
+        
+        <!-- Leaves along main stem -->
+        <path d="M 293 162 Q 302 152 293 145 Q 284 152 293 162 Z" fill="#2d5830" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 291 176 Q 308 170 306 182 Q 292 184 291 176 Z" fill="#36653a" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 290 183 Q 272 178 273 190 Q 288 191 290 183 Z" fill="#2d5830" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 289 198 Q 307 194 304 206 Q 290 206 289 198 Z" fill="#3f7243" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 288 206 Q 271 202 273 214 Q 287 214 288 206 Z" fill="#2d5830" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 288 221 Q 306 219 303 231 Q 288 228 288 221 Z" fill="#4a7f4e" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 287 228 Q 271 227 274 238 Q 287 236 287 228 Z" fill="#36653a" stroke="#1A3C34" stroke-width="1.2" />
+        
+        <!-- Leaves on side stem -->
+        <path d="M 275 190 Q 270 180 274 175 Q 278 180 275 190 Z" fill="#3f7243" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 276 200 Q 262 195 264 207 Q 276 206 276 200 Z" fill="#2d5830" stroke="#1A3C34" stroke-width="1.2" />
+        <path d="M 277 215 Q 263 212 266 222 Q 277 221 277 215 Z" fill="#36653a" stroke="#1A3C34" stroke-width="1.2" />
+      </g>
+
+      <!-- 2. Small Middle Pot -->
+      <g id="middle-small-pot">
+        <path d="M 307 272 L 309 292 Q 318 295 327 292 L 329 272 Z" fill="url(#specklePot)" stroke="#1A3C34" stroke-width="1.8" />
+        <ellipse cx="318" cy="272" rx="11" ry="3.5" fill="#ece6d8" stroke="#1A3C34" stroke-width="1.5" />
+        <!-- Small plant shoots -->
+        <path d="M 318 270 Q 319 250 323 238" fill="none" stroke="#36653a" stroke-width="2" stroke-linecap="round" />
+        <circle cx="323" cy="237" r="4.5" fill="#4e7c48" stroke="#1A3C34" stroke-width="1" />
+        <circle cx="314" cy="245" r="4" fill="#36653a" stroke="#1A3C34" stroke-width="1" />
+        <circle cx="324" cy="254" r="4" fill="#5c8f55" stroke="#1A3C34" stroke-width="1" />
+        <circle cx="313" cy="260" r="3.5" fill="#36653a" stroke="#1A3C34" stroke-width="1" />
+      </g>
+
+      <!-- 3. Right: Monstera in Terracotta Pot with Fenestrated Leaves -->
+      <g id="monstera-plant">
+        <!-- Terracotta Pot & Saucer -->
+        <path d="M 326 256 L 332 291 Q 360 297 388 291 L 394 256 Z" fill="url(#terracottaPot)" stroke="#1A3C34" stroke-width="2.2" />
+        <ellipse cx="360" cy="256" rx="34" ry="7.5" fill="#d97d54" stroke="#1A3C34" stroke-width="2" />
+        <!-- Pot Rim Lip -->
+        <path d="M 324 254 Q 360 262 396 254 L 396 261 Q 360 269 324 261 Z" fill="#9a4722" opacity="0.3" />
+        <!-- Soil in pot -->
+        <ellipse cx="360" cy="256" rx="30" ry="5.5" fill="#342013" />
+
+        <!-- Terracotta Saucer -->
+        <path d="M 330 293 Q 360 299 390 293 L 393 297 Q 360 304 327 297 Z" fill="#b05b32" stroke="#1A3C34" stroke-width="1.8" />
+
+        <!-- Monstera Stems & Vines -->
+        <path d="M 358 254 Q 366 210 376 170" fill="none" stroke="#275027" stroke-width="3" stroke-linecap="round" />
+        <path d="M 350 254 Q 340 220 338 185" fill="none" stroke="#275027" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M 365 254 Q 392 235 418 245 Q 436 260 442 285" fill="none" stroke="#275027" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M 370 254 Q 405 210 415 180" fill="none" stroke="#275027" stroke-width="2.8" stroke-linecap="round" />
+
+        <!-- Fenestrated Monstera Leaves (Adansonii / Deliciosa style) -->
+        <!-- Top Main Leaf -->
+        <g transform="translate(376, 168) rotate(15)">
+          <path d="M 0 0 C 20 -25, 45 -10, 42 20 C 38 48, 10 52, 0 54 C -10 52, -35 45, -34 18 C -33 -12, -15 -25, 0 0 Z" fill="url(#leafGradLight)" stroke="#1A3C34" stroke-width="1.8" />
+          <path d="M 0 2 L 0 50" stroke="#1A3C34" stroke-width="1.5" stroke-linecap="round" />
+          <!-- Fenestration Holes -->
+          <ellipse cx="15" cy="18" rx="4" ry="8" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" transform="rotate(15, 15, 18)" />
+          <ellipse cx="18" cy="34" rx="4.5" ry="7" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" transform="rotate(25, 18, 34)" />
+          <ellipse cx="-13" cy="16" rx="3.5" ry="7" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" transform="rotate(-20, -13, 16)" />
+          <ellipse cx="-15" cy="32" rx="4" ry="7" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" transform="rotate(-15, -15, 32)" />
+        </g>
+
+        <!-- Top Right Leaf -->
+        <g transform="translate(415, 180) rotate(42)">
+          <path d="M 0 0 C 18 -20, 38 -5, 35 22 C 32 42, 8 46, 0 48 C -8 46, -28 40, -28 16 C -28 -8, -12 -20, 0 0 Z" fill="url(#leafGradDark)" stroke="#1A3C34" stroke-width="1.8" />
+          <path d="M 0 2 L 0 44" stroke="#1A3C34" stroke-width="1.5" />
+          <ellipse cx="12" cy="16" rx="3.5" ry="6" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" />
+          <ellipse cx="-10" cy="15" rx="3" ry="5.5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" />
+          <ellipse cx="11" cy="28" rx="3.5" ry="5.5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" />
+        </g>
+
+        <!-- Upper Left Bushy Leaflets -->
+        <g transform="translate(340, 185) rotate(-22)">
+          <path d="M 0 0 C 14 -16, 30 -5, 28 16 C 25 32, 6 38, 0 40 C -6 38, -22 34, -22 14 C -22 -6, -10 -16, 0 0 Z" fill="#4e7c48" stroke="#1A3C34" stroke-width="1.6" />
+          <path d="M 0 2 L 0 36" stroke="#1A3C34" stroke-width="1.2" />
+          <ellipse cx="8" cy="14" rx="2.5" ry="5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.1" />
+          <ellipse cx="-7" cy="13" rx="2.5" ry="5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.1" />
+        </g>
+
+        <!-- Trailing Right Vine Leaves -->
+        <g transform="translate(425, 240) rotate(55)">
+          <path d="M 0 0 C 16 -18, 34 -4, 32 18 C 28 36, 8 40, 0 42 C -8 40, -25 35, -24 14 C -24 -6, -10 -18, 0 0 Z" fill="url(#leafGradLight)" stroke="#1A3C34" stroke-width="1.7" />
+          <ellipse cx="10" cy="15" rx="3" ry="6" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" />
+          <ellipse cx="-8" cy="14" rx="3" ry="5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" />
+          <ellipse cx="9" cy="26" rx="2.5" ry="5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.2" />
+        </g>
+
+        <!-- Lower Drooping Leaflet with Fenestration -->
+        <g transform="translate(438, 285) rotate(70)">
+          <path d="M 0 0 C 15 -14, 32 -2, 28 18 C 24 35, 6 38, 0 40 C -6 38, -22 33, -22 12 C -22 -5, -9 -14, 0 0 Z" fill="url(#leafGradDark)" stroke="#1A3C34" stroke-width="1.7" />
+          <ellipse cx="8" cy="14" rx="3" ry="5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.1" />
+          <ellipse cx="-7" cy="13" rx="2.5" ry="4.5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.1" />
+          <ellipse cx="7" cy="25" rx="2.5" ry="4.5" fill="#FAF8F4" stroke="#1A3C34" stroke-width="1.1" />
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. Cascading Pothos/Ivy Vines along Top Left Rim -->
+    <g id="cascading-vines">
+      <!-- Vine main stem curves -->
+      <path d="M 120 70 Q 145 95 180 120 Q 150 140 142 165 Q 120 200 115 245 Q 110 270 115 285" fill="none" stroke="#224528" stroke-width="3.2" stroke-linecap="round" />
+      <path d="M 175 60 Q 155 85 130 110" fill="none" stroke="#224528" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M 142 165 Q 100 180 92 230 Q 95 260 108 275" fill="none" stroke="#224528" stroke-width="2.2" stroke-linecap="round" />
+
+      <!-- Tendrils -->
+      <path d="M 115 245 Q 98 250 102 268 Q 110 272 112 264" fill="none" stroke="#2e5a34" stroke-width="1.8" stroke-linecap="round" />
+      <path d="M 178 120 Q 200 128 208 142" fill="none" stroke="#2e5a34" stroke-width="1.8" stroke-linecap="round" />
+
+      <!-- Heart-Shaped Pothos Leaves on Vine -->
+      <!-- Leaf 1 (Top Left) -->
+      <g transform="translate(145, 80) rotate(-35)">
+        <path d="M 0 0 C 15 -18, 30 -5, 26 15 C 22 30, 4 34, 0 38 C -4 34, -22 30, -26 15 C -30 -5, -15 -18, 0 0 Z" fill="url(#leafGradLight)" stroke="#1A3C34" stroke-width="1.8" />
+        <path d="M 0 0 L 0 32" stroke="#224528" stroke-width="1.4" />
+      </g>
+
+      <!-- Leaf 2 (Upper center) -->
+      <g transform="translate(185, 115) rotate(-15)">
+        <path d="M 0 0 C 14 -16, 28 -4, 24 14 C 20 28, 4 32, 0 35 C -4 32, -20 28, -24 14 C -28 -4, -14 -16, 0 0 Z" fill="url(#leafGradDark)" stroke="#1A3C34" stroke-width="1.8" />
+        <path d="M 0 0 L 0 30" stroke="#1A3C34" stroke-width="1.3" />
+      </g>
+
+      <!-- Leaf 3 (Outer edge) -->
+      <g transform="translate(118, 125) rotate(-65)">
+        <path d="M 0 0 C 16 -18, 32 -5, 28 16 C 24 32, 5 36, 0 40 C -5 36, -24 32, -28 16 C -32 -5, -16 -18, 0 0 Z" fill="url(#leafGradLight)" stroke="#1A3C34" stroke-width="1.8" />
+        <path d="M 0 0 L 0 34" stroke="#1A3C34" stroke-width="1.4" />
+      </g>
+
+      <!-- Leaf 4 (Mid vine) -->
+      <g transform="translate(150, 160) rotate(-25)">
+        <path d="M 0 0 C 15 -17, 30 -4, 26 15 C 22 30, 4 34, 0 37 C -4 34, -22 30, -26 15 C -30 -4, -15 -17, 0 0 Z" fill="url(#leafGradDark)" stroke="#1A3C34" stroke-width="1.8" />
+        <path d="M 0 0 L 0 31" stroke="#1A3C34" stroke-width="1.4" />
+      </g>
+
+      <!-- Leaf 5 (Lower outer arch) -->
+      <g transform="translate(96, 205) rotate(-75)">
+        <path d="M 0 0 C 14 -16, 28 -4, 25 14 C 21 28, 4 32, 0 35 C -4 32, -21 28, -25 14 C -28 -4, -14 -16, 0 0 Z" fill="url(#leafGradLight)" stroke="#1A3C34" stroke-width="1.8" />
+        <path d="M 0 0 L 0 30" stroke="#1A3C34" stroke-width="1.3" />
+      </g>
+
+      <!-- Leaf 6 (Lower vine tip) -->
+      <g transform="translate(112, 250) rotate(-45)">
+        <path d="M 0 0 C 12 -14, 24 -3, 22 12 C 18 24, 3 28, 0 30 C -3 28, -18 24, -22 12 C -24 -3, -12 -14, 0 0 Z" fill="url(#leafGradDark)" stroke="#1A3C34" stroke-width="1.8" />
+        <path d="M 0 0 L 0 25" stroke="#1A3C34" stroke-width="1.2" />
+      </g>
+    </g>
+
+  </g> <!-- End Clipped Content -->
+
+  <!-- 5. Central Brand Typography: "The Leafy Window" -->
+  <g id="brand-typography">
+    <!-- "The" in elegant serif font -->
+    <text x="180" y="202" font-family="'Fraunces', 'Playfair Display', Georgia, serif" font-size="34" font-weight="500" fill="#1A3C34" letter-spacing="1">The</text>
+
+    <!-- "Leafy" in bold classic high-contrast serif font -->
+    <text x="122" y="278" font-family="'Fraunces', 'Playfair Display', Georgia, serif" font-size="78" font-weight="700" fill="#1A3C34" letter-spacing="-1">Leafy</text>
+
+    <!-- "Window" in fluid, artistic calligraphy script -->
+    <text x="114" y="356" font-family="'Caveat', 'Dancing Script', cursive" font-size="72" font-weight="700" fill="#1A3C34" letter-spacing="1" transform="rotate(-3, 210, 345)">Window</text>
+
+    <!-- Script flourishing tail line -->
+    <path d="M 292 344 Q 325 348 358 338" fill="none" stroke="#1A3C34" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- 6. Botanical Seedling Motif with Flanking Lines -->
+  <g id="seedling-divider">
+    <!-- Left Divider Line -->
+    <line x1="150" y1="368" x2="225" y2="368" stroke="#1A3C34" stroke-width="1.8" stroke-linecap="round" />
+    
+    <!-- Central 3-Leaf Sprout Icon -->
+    <g transform="translate(250, 368)">
+      <!-- Center Upright Leaf -->
+      <path d="M 0 -1 L 0 -13 C 4 -10, 5 -4, 0 -1 Z" fill="#1A3C34" />
+      <path d="M 0 -1 L 0 -13 C -4 -10, -5 -4, 0 -1 Z" fill="#1A3C34" />
+      <!-- Left Leaflet -->
+      <path d="M 0 0 C -7 -1, -11 -6, -9 -11 C -4 -11, 0 -4, 0 0 Z" fill="#1A3C34" />
+      <!-- Right Leaflet -->
+      <path d="M 0 0 C 7 -1, 11 -6, 9 -11 C 4 -11, 0 -4, 0 0 Z" fill="#1A3C34" />
+    </g>
+
+    <!-- Right Divider Line -->
+    <line x1="275" y1="368" x2="350" y2="368" stroke="#1A3C34" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <!-- 7. Curved Arched Motto: "G R O W  •  C A R E  •  T H R I V E" -->
+  <text font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#1A3C34" letter-spacing="5.5">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      GROW   •   CARE   •   THRIVE
+    </textPath>
+  </text>
+</svg>

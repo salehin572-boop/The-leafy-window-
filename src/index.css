@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f9f8f4;
+  --botanical: #1a3c34;
+  --leafy: #4caf50;
+  --terracotta: #c56d44;
+  --text-muted: rgba(26, 60, 52, 0.7);
+  --sand: #e9e5db;
+}
+
+@theme {
+  --font-serif: 'Georgia', 'Fraunces', serif;
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Brush Script MT', 'Caveat', cursive;
+
+  --color-cream: #f9f8f4;
+  --color-cream-card: #ffffff;
+  --color-sand: #e9e5db;
+  --color-sand-light: #f4f1ea;
+  --color-botanical: #1a3c34;
+  --color-botanical-dark: #122a24;
+  --color-botanical-soft: #244b41;
+  --color-leafy: #4caf50;
+  --color-leafy-bright: #66bb6a;
+  --color-leafy-dark: #388e3c;
+  --color-leafy-tint: #edf7ed;
+  --color-terracotta: #c56d44;
+  --color-terracotta-dark: #ab5730;
+  --color-terracotta-tint: #fbeee8;
+}
+
+@layer base {
+  body {
+    background-color: var(--cream);
+    color: var(--botanical);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .serif, .font-serif {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+  }
+
+  .script, .font-script {
+    font-family: 'Brush Script MT', 'Caveat', cursive;
+    color: var(--terracotta);
+  }
+}
+
+/* Natural Tones component utilities */
+.btn-natural {
+  background: var(--leafy);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-natural:hover {
+  background: #43a047;
+  transform: translateY(-1px);
+}
+
+.card-natural {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-natural:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.tagline-natural {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 700;
+}
+
+.nav-link-natural {
+  text-decoration: none;
+  color: var(--botanical);
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.2s, color 0.2s;
+}
+.nav-link-natural:hover {
+  opacity: 1;
+  color: var(--leafy);
+}
+
+/* Custom smooth scroll & subtle scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e9e5db;
+}
+::-webkit-scrollbar-thumb {
+  background: #a5b9af;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4caf50;
+}
